@@ -3,7 +3,7 @@
 This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj/hub).
 
 ## Solution
-- https://anthonyverdes.github.io/qr-code-component-main/
+- https://anthonyverdes.github.io/contact-form-challenge/
 
 ## Overview 
 
