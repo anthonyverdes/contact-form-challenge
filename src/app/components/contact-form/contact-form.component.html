@@ -6,16 +6,17 @@
     </p>
     <p>Thanks for completing the form. We'll be in touch soon!</p>
   </div>
-  <h2>Contact Us</h2>
+  <h1>Contact Us</h1>
   <div class="contact-form__input-group">
 
     <!-- First Name -->
     <div class="contact-form__input">
-      <label>First Name <span>*</span></label>
+      <label for="first-name">First Name <span>*</span></label>
       <input type="text" 
         formControlName="firstName" 
         required
         [ngClass]="{'invalid': formSubmitted && contactUsForm.controls.firstName.errors}"
+        id="first-name"
       />
       <span class="error" 
         *ngIf="formSubmitted && contactUsForm.controls.firstName.errors?.['required']">
@@ -25,11 +26,12 @@
 
     <!-- Last Name -->
     <div class="contact-form__input">
-      <label>Last Name <span>*</span></label>
+      <label for="last-name">Last Name <span>*</span></label>
       <input type="text" 
         formControlName="lastName"
         required
         [ngClass]="{'invalid': formSubmitted && contactUsForm.controls.lastName.errors}"
+        id="last-name"
       />
       <span class="error"
         *ngIf="formSubmitted && contactUsForm.controls.lastName.errors?.['required']">
@@ -40,11 +42,12 @@
 
   <!-- Email -->
   <div class="contact-form__input">
-    <label>Email Address <span>*</span></label>
+    <label for="email-address">Email Address <span>*</span></label>
     <input type="text" 
       formControlName="emailAddress"
       required
       [ngClass]="{'invalid': formSubmitted && contactUsForm.controls.emailAddress.errors}"
+      id="email-address"
     />
     <span class="error"
       *ngIf="formSubmitted && contactUsForm.controls.emailAddress.errors?.['required']">
@@ -80,9 +83,10 @@
 
   <!-- Message -->
   <div class="contact-form__input">
-    <label>Message <span>*</span></label>
+    <label for="user-message">Message <span>*</span></label>
     <textarea formControlName="userMessage"
       [ngClass]="{'invalid': formSubmitted && contactUsForm.controls.userMessage.errors}"
+      id="user-message"
     ></textarea>
     <span class="error"
       *ngIf="formSubmitted && contactUsForm.controls.userMessage.errors?.['required']">
